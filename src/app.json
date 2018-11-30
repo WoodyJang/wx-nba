@@ -1,0 +1,48 @@
+{
+  "pages": [
+    "pages/launch/index",
+    "pages/index/index",
+    "pages/doctor/index",
+    "pages/staff/detail/index",
+    "pages/staff/index"
+  ],
+  "window": {
+    "backgroundTextStyle": "dark",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "丁香诊所",
+    "navigationBarTextStyle": "black",
+    "backgroundColor": "#fff"
+  },
+  "tabBar": {
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "首页",
+        "iconPath": "images/navbar/home.png",
+        "selectedIconPath": "images/navbar/home_active.png"
+      },
+      {
+        "pagePath": "pages/index/index",
+        "text": "资讯",
+        "iconPath": "images/navbar/new.png",
+        "selectedIconPath": "images/navbar/new_active.png"
+      },
+      {
+        "pagePath": "pages/index/index",
+        "text": "商城",
+        "iconPath": "images/navbar/new.png",
+        "selectedIconPath": "images/navbar/new_active.png"
+      },
+      {
+        "pagePath": "pages/index/index",
+        "text": "我的",
+        "iconPath": "images/navbar/mine.png",
+        "selectedIconPath": "images/navbar/mine_active.png"
+      }
+    ],
+    "color": "#999",
+    "borderStyle": "white",
+    "selectedColor": "#15BEA4",
+    "backgroundColor": "#fff"
+  }
+}

@@ -1,0 +1,384 @@
+//out: index.wxss, compress: false, sourceMap: false
+/**index.wxss**/
+.index {
+  width: 100%;
+  overflow-x: hidden;
+}
+
+swiper {
+  width: 100%;
+  height: 277rpx;
+}
+
+swiper-item {
+  width: 100%;
+  position: relative;
+  height: 100%;
+}
+
+.index-item {
+  height: 277rpx;
+  position: relative;
+  background-color: rgba(0, 0, 0, 0.06);
+  color: #fff;
+}
+
+.index-item-bg {
+  width: 100%;
+}
+
+.index-store {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+}
+
+.index-store-wrap {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  position: absolute;
+  top: 0;
+  left: 40rpx;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.index-logo {
+  width: 100rpx;
+  height: 100rpx;
+  margin: auto 0;
+}
+
+.index-store-name {
+  font-size: 40rpx;
+  font-weight: 500;
+  margin-bottom: 7rpx;
+}
+
+.index-slogan {
+  font-size: 24rpx;
+}
+
+.index-tabs {
+  margin: 0 30rpx;
+  display: flex;
+  flex-direction: row;
+  height: 163rpx;
+  justify-content: space-around;
+  background: #fff;
+  box-shadow: 0rpx 7rpx 16rpx 0rpx rgba(229, 235, 235, 0.73);
+  border-radius: 8rpx;
+  margin-top: -15rpx;
+  position: relative;
+  z-index: 10;
+}
+
+.index-tabs-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 42rpx 0 16rpx 0;
+}
+
+.index-tabs-item-logo {
+  width: 62rpx;
+  height: 56rpx;
+  border: 1rpx solid;
+  margin-bottom: 8rpx;
+}
+
+.index-tabs-item-content {
+  font-size: 26rpx;
+  color: #979797;
+}
+
+.index-message {
+  margin: 40rpx 30rpx 40rpx 35rpx;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.index-message-wrap {
+  display: flex;
+  flex-direction: row;
+}
+
+.index-message-logo {
+  width: 64rpx;
+  height: 64rpx;
+  border: 1rpx solid;
+  margin-right: 27rpx;
+}
+
+.index-message-items {
+  display: flex;
+  flex-direction: column;
+}
+
+.index-message-item {
+  color: #646464;
+  font-size: 24rpx;
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.index-message-item-dot {
+  width: 6rpx;
+  height: 6rpx;
+  background-color: #646464;
+  border-radius: 50%;
+  margin-right: 16rpx;
+}
+
+.index-message-arrow {
+  color: #646464;
+  font-size: 24rpx;
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-right: 6rpx;
+}
+
+.index-message-info {
+  width: 16rpx;
+  height: 16rpx;
+  background-color: #F64947;
+  border-radius: 50%;
+  margin-right: 8rpx;
+}
+
+.index-hot-goods,
+.index-clinic {
+  margin: 30rpx 30rpx 50rpx 30rpx;
+}
+
+.index {
+  &-title {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+
+    &-content {
+      color: #000;
+      font-size: 34rpx;
+    }
+
+    &-all {
+      color: #15BEA4;
+      font-size: 28rpx;
+    }
+  }
+}
+
+.index-hot-items {
+  .index-hot-item {
+    margin-top: 50rpx;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    justify-content: center;
+    height: 124rpx;
+    box-sizing: border-box;
+
+    &-meal {
+      display: flex;
+      flex-direction: row;
+      flex: 1;
+      box-sizing: border-box;
+
+      // align-items: center;
+      &-logo {
+        width: 124rpx;
+        height: 124rpx;
+        border: 1rpx solid;
+        margin-right: 30rpx;
+        box-sizing: border-box;
+        border-radius: 50%;
+      }
+
+      &-content {
+        display: flex;
+        flex-direction: column;
+        flex: 1;
+
+        &-wrap {
+          display: flex;
+          flex-direction: row;
+          color: #303030;
+          font-size: 28rpx;
+
+          // align-items: center;
+          .index-hot-item-meal-content-name {
+            font-weight: 500;
+            margin-right: 15rpx;
+          }
+
+          .index-hot-item-meal-content-title {
+            font-weight: 400;
+          }
+        }
+
+        &-staff {
+          color: #646464;
+          font-size: 24rpx;
+          margin-bottom: 16rpx;
+          margin: 6rpx 0 16rpx 0;
+        }
+
+        &-expert {
+          color: #979797;
+          font-size: 22rpx;
+        }
+
+        &-title {
+          color: #303030;
+          font-size: 28rpx;
+          // margin: 6rpx 0 10rpx 0;
+        }
+
+        &-price {
+          color: #979797;
+          font-size: 24rpx;
+          text-decoration: line-through;
+        }
+      }
+    }
+
+    &-price {
+      background-color: #f6f6f6;
+      border-radius: 30rpx;
+      color: #F64947;
+      font-size: 24rpx;
+      width: 140rpx;
+      padding: 10rpx;
+      text-align: center;
+      margin-left: 50rpx;
+    }
+  }
+}
+
+.index-clinic {
+  &-items {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin: 50rpx 0;
+  }
+
+  &-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    &-logo {
+      width: 80rpx;
+      height: 80rpx;
+      border: 1rpx solid;
+      margin-bottom: 20rpx;
+    }
+
+    &-name {
+      width: 160rpx;
+      color: #646464;
+      font-size: 26rpx;
+      text-align: center;
+    }
+  }
+}
+
+.index-clinic-info {
+  .index-title {
+    margin: 30rpx 30rpx 0rpx 30rpx;
+  }
+
+  swiper {
+    margin: 50rpx 15rpx;
+
+    swiper-item {
+      padding: 0 15rpx;
+      height: 300rpx;
+
+      .index-item-bg {
+        border-radius: 8rpx;
+        width: 100%;
+        height: 100%;
+      }
+    }
+  }
+
+  &-detail {
+    margin: 0rpx 30rpx 0rpx 30rpx;
+
+    &-items {
+      display: flex;
+      flex-direction: column;
+    }
+
+    &-item {
+      display: flex;
+      flex-direction: row;
+      color: #646464;
+      font-size: 24rpx;
+      align-items: center;
+      margin-bottom: 50rpx;
+
+      // &:last-child{
+      //   margin-bottom:0;
+      // }
+      &-logo {
+        width: 24rpx;
+        height: 24rpx;
+        border: 1rpx solid;
+        margin-left: 30rpx;
+      }
+
+      &-name {
+        margin-left: 30rpx;
+        padding-right: 20rpx;
+      }
+
+      &-divide {
+        width: 1rpx;
+        height: 20rpx;
+        background-color: #979797;
+      }
+
+      &-content {
+        margin-left: 20rpx;
+      }
+    }
+  }
+}
+
+.index-online {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  margin: 30rpx;
+
+  &-wrap {
+    display: flex;
+    flex-direction: row;
+    color: #000;
+    font-size: 28rpx;
+
+    .index-online-logo {
+      width: 40rpx;
+      height: 40rpx;
+      border: 1rpx solid;
+      margin-right: 20rpx;
+    }
+  }
+}

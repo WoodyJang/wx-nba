@@ -1,0 +1,15 @@
+<!--components/listItem/index.wxml-->
+<view class="list-item">
+  <view class="list-item-wrap">
+    <view class="list-item-logo"></view>
+    <view class="list-item-content">
+      <view class="list-item-content-wrap">
+        <view class="list-item-content-name">林涵中</view>
+        <view class="list-item-content-title">特聘医师</view>
+      </view>
+      <view class="list-item-content-staff">耳鼻喉科</view>
+      <view class="list-item-content-expert text_overflow_2">擅长：耳科疾病诊治、耳显微外、五官、整形美容耳擅长：耳科疾病诊治、耳显微外、五官、整形美容耳擅长：耳科疾病诊治、耳显微外、五官、整形美容耳擅长：耳科疾病诊治、耳显微外、五官、整形美容耳</view>
+    </view>
+  </view>
+  <view class="list-item-arrow arrow_right"></view>
+</view>

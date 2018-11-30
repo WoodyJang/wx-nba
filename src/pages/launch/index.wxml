@@ -1,0 +1,35 @@
+<!--pages/launch/index.wxml-->
+<view class="launch">
+    <view class="launch-items">
+      <view class="launch-item" bindtap="handleToIndex">
+        <view class="launch-store">
+          <view class="launch-store-name">丁香诊所滨江店</view>
+          <view class="launch-slogan">用心呵护您的健康</view>
+        </view>
+        <view class="launch-store-info">
+          <image class="launch-logo"></image>
+          <view class="launch-info">
+            <view class="launch-addr">浙江省杭州市滨江区上峰电商产业园3号楼</view>
+            <view class="launch-tel">0571-849248</view>
+          </view>
+          <view class="launch-arrow arrow_right"></view>
+        </view>
+      </view>
+      <view class="launch-item" bindtap="handleToIndex">
+        <view class="launch-store">
+          <view class="launch-store-name">丁香诊所滨江店</view>
+          <view class="launch-slogan">用心呵护您的健康</view>
+        </view>
+        <view class="launch-store-info">
+          <view class="launch-store-info-wrap">
+            <image class="launch-logo" mode="scaleToFill"></image>
+            <view class="launch-info">
+              <view class="launch-addr">浙江省杭州市滨江区上峰电商产业园3号楼</view>
+              <view class="launch-tel">0571-849248</view>
+            </view>
+          </view>
+          <view class="launch-arrow arrow_right"></view>
+        </view>
+      </view>
+    </view>
+</view>

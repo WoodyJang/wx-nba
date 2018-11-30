@@ -1,0 +1,65 @@
+/* pages/launch/index.wxss */
+.launch{
+  padding: 30rpx;
+}
+.launch-item {
+  display: flex;
+  flex-direction: column;
+  box-shadow:0rpx 7rpx 16rpx 0rpx rgba(229, 235, 235, 0.73);
+  border-radius:8rpx;
+  margin-bottom: 30rpx;
+}
+.launch-store {
+  height: 210rpx;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.06);
+  color: #fff;
+}
+.launch-store-name {
+  font-size:36rpx;
+  font-weight: 500;
+  line-height:50rpx;
+  margin-bottom: 10rpx;
+}
+.launch-slogan {
+  font-size:24rpx;
+  line-height:33rpx;
+}
+.launch-store-info {
+  display: flex;
+  flex-direction: row;
+  padding: 30rpx 0;
+  justify-content: space-around;
+  align-items: center;
+}
+.launch-store-info-wrap{
+  display: flex;
+  flex-direction: row;
+}
+.launch-logo {
+  width: 80rpx;
+  height: 80rpx;
+  background:rgba(255, 255, 255, 1);
+  border:1rpx solid rgba(238, 238, 238, 1);
+  border-radius: 50%;
+}
+.launch-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-left: 20rpx;
+}
+.launch-addr {
+  font-size: 24rpx;
+  color: #646464;
+  line-height:33rpx;
+  margin-bottom: 10rpx;
+}
+.launch-tel {
+  font-size: 24rpx;
+  color: #979797;
+  line-height:33rpx;
+}

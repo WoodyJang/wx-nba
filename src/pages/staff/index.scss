@@ -1,0 +1,39 @@
+//out: index.wxss, compress: false, sourceMap: false
+
+.staff{
+  &-items{
+
+  }
+  &-item{
+    display: flex;
+    flex-direction: row;
+    padding: 32rpx 0;
+    margin: 0 32rpx;
+    border-bottom: 1rpx solid #eee;
+    &-logo{
+      width:96rpx;
+      height:96rpx;
+      border: 1rpx solid;
+      border-radius: 50%;
+    }
+    &-content{
+      display: flex;
+      flex-direction: column;
+      flex: 1;
+      margin:0 32rpx;
+      &-title{
+        font-size:30rpx;
+        color: #303030;
+        font-weight:500;
+        margin-bottom: 3rpx;
+      }
+      &-desc{
+        font-size:28rpx;
+        color: #999;
+      }
+    }
+    &-arrow{
+      margin-top: 32rpx;
+    }
+  }
+}

@@ -1,0 +1,6 @@
+{
+  "navigationBarTitleText": "医生团队",
+   "usingComponents": {
+     "list-item": "/components/listItem/index"
+   }
+}

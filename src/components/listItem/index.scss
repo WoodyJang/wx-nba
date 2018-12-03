@@ -1,0 +1,47 @@
+//out: index.wxss, compress: false, sourceMap: false
+@import '../../common/style/style.wxss';
+.list-item{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    box-sizing: border-box;
+    width: 100%;
+    border-bottom: 1rpx solid #bebebe;
+    .list-container{
+      width: 100%;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+      padding: 30rpx 30rpx;
+      .left-icon,.right-icon{
+        width: 20%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        image{
+          width: 120rpx;
+          height: 120rpx;
+        }
+      }
+      .result{
+        width: 20%;
+        text-align: center;
+        font-size: 32rpx;
+      }
+      .score{
+        width: 20%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        .team-score{
+          font-size: 40rpx;
+        }
+        .team-name{
+          font-size: 24rpx;
+        }
+      }
+    }
+  }

@@ -1,47 +1,48 @@
 {
   "pages": [
-    "pages/launch/index",
     "pages/index/index",
+    "pages/launch/index",
     "pages/doctor/index",
     "pages/staff/detail/index",
     "pages/staff/index"
   ],
   "window": {
     "backgroundTextStyle": "dark",
-    "navigationBarBackgroundColor": "#fff",
-    "navigationBarTitleText": "丁香诊所",
-    "navigationBarTextStyle": "black",
+    "navigationBarBackgroundColor": "#15BEA4",
+    "navigationBarTitleText": "微信NBA",
+    "navigationBarTextStyle": "#fff",
     "backgroundColor": "#fff"
+    
   },
   "tabBar": {
     "list": [
       {
         "pagePath": "pages/index/index",
-        "text": "首页",
-        "iconPath": "images/navbar/home.png",
-        "selectedIconPath": "images/navbar/home_active.png"
+        "text": "赛事直播",
+        "iconPath": "images/navbar/ball.png",
+        "selectedIconPath": "images/navbar/ball-active.png"
       },
       {
         "pagePath": "pages/index/index",
-        "text": "资讯",
-        "iconPath": "images/navbar/new.png",
-        "selectedIconPath": "images/navbar/new_active.png"
+        "text": "NBA资讯",
+        "iconPath": "images/navbar/news.png",
+        "selectedIconPath": "images/navbar/news-active.png"
       },
       {
         "pagePath": "pages/index/index",
-        "text": "商城",
-        "iconPath": "images/navbar/new.png",
-        "selectedIconPath": "images/navbar/new_active.png"
+        "text": "球队战绩",
+        "iconPath": "images/navbar/rank.png",
+        "selectedIconPath": "images/navbar/rank-active.png"
       },
       {
         "pagePath": "pages/index/index",
-        "text": "我的",
-        "iconPath": "images/navbar/mine.png",
-        "selectedIconPath": "images/navbar/mine_active.png"
+        "text": "数据统计",
+        "iconPath": "images/navbar/stats.png",
+        "selectedIconPath": "images/navbar/stats-active.png"
       }
     ],
     "color": "#999",
-    "borderStyle": "white",
+    "borderStyle": "#bebebe",
     "selectedColor": "#15BEA4",
     "backgroundColor": "#fff"
   }

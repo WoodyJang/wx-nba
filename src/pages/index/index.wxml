@@ -1,211 +1,27 @@
 <!--index.wxml-->
-<view class="index">
-  <swiper 
-    indicator-dots 
-    autoplay
-    circular
-    interval="3000"
-    indicator-active-color="#fff" 
-    indicator-color="rgba(255,255,255,0.2)">
-    <swiper-item>
-     <view class="index-item">
-        <image class="index-item-bg" src="../../images/doc_bg.png" mode="scaleToFill"></image>
-        <view class="index-store-wrap">
-          <image class="index-logo" mode="scaleToFill"></image>
-          <view class="index-store">
-            <view class="index-store-name">丁香诊所滨江店</view>
-            <view class="index-slogan">用心呵护您的健康</view>
+  <view class="index">
+    <view class="title">
+      <view class="title-icon icon-pre" bindtap="bindData" data-time="{{data.pre_date}}"></view>
+      <view class="title-icon time-pick">
+        <picker mode="date" value="{{date}}" start="2015-09-01" end="2019-09-01" bindchange="bindDateChange">
+          <view class="picker">
+            {{data.cur_date}}
+            <text class='icon-picker'></text>
           </view>
-        </view>
+        </picker>
       </view>
-    </swiper-item>
-    <swiper-item>
-      <image class="index-item-bg" src="../../images/article_bg2.png" mode="scaleToFill"></image>
-    </swiper-item>
-  </swiper>
-  <view class="index-tabs">
-    <view class="index-tabs-item">
-      <image class="index-tabs-item-logo"></image>
-      <view class="index-tabs-item-content">门诊预约</view>
+      <view class="title-icon icon-next" bindtap="bindData" data-time="{{data.next_date}}"></view>
     </view>
-    <view class="index-tabs-item">
-      <image class="index-tabs-item-logo"></image>
-      <view class="index-tabs-item-content">医生出诊类</view>
-    </view>
-    <view class="index-tabs-item">
-      <image class="index-tabs-item-logo"></image>
-      <view class="index-tabs-item-content">在线咨询</view>
-    </view>
-  </view>
-  <view class="index-message">
-    <view class="index-message-wrap">
-      <view class="index-message-logo"></view>
-      <view class="index-message-items">
-        <view class="index-message-item">
-          <view class="index-message-item-dot"></view>
-          <view class="index-message-item-content">您预约20日9点儿科，李医生，请按时到诊哦！</view>
-        </view>
-        <view class="index-message-item">
-        <view class="index-message-item-dot"></view>
-          <view class="index-message-item-content">您的血常规报告已出</view>
-        </view>
-      </view>
-     </view>
-    <view class="index-message-arrow">
-      <view class="index-message-info"></view>
-      <view class="index-message-arrow-right arrow_right"></view>
-    </view>
-  </view>
-  <view class="divide"></view>
-  <view class="index-hot-goods">
-    <view class="index-title">
-      <view class="index-title-content">热门商品</view>
-      <view class="index-title-all">查看全部</view>
-    </view>
-    <view class="index-hot-items">
-      <view class="index-hot-item">
-        <view class="index-hot-item-meal">
-          <view class="index-hot-item-meal-logo"></view>
-          <view class="index-hot-item-meal-content">
-            <view class="index-hot-item-meal-content-title">成人健康管理</view>
-            <view class="index-hot-item-meal-content-price">¥ 420</view>
-          </view>
-        </view>
-        <view class="index-hot-item-price">¥298</view>
-      </view>
-      <view class="index-hot-item">
-        <view class="index-hot-item-meal">
-          <view class="index-hot-item-meal-logo"></view>
-          <view class="index-hot-item-meal-content">
-            <view class="index-hot-item-meal-content-title">丁香诊所 Online 家庭医生服务</view>
-            <view class="index-hot-item-meal-content-price">¥ 420.5</view>
-          </view>
-        </view>
-        <view class="index-hot-item-price">¥298.5</view>
-      </view>
-      <view class="index-hot-item">
-        <view class="index-hot-item-meal">
-          <view class="index-hot-item-meal-logo"></view>
-          <view class="index-hot-item-meal-content">
-            <view class="index-hot-item-meal-content-title text_overflow_2">丁香诊所升级版儿童发育评估 含儿童口腔诊断</view>
-            <view class="index-hot-item-meal-content-price">¥ 420.05</view>
-          </view>
-        </view>
-        <view class="index-hot-item-price text_ellipsis">¥29822222.05</view>
+    <view class="list-container">
+      <scroll-view scroll-y="true" bindscrolltoupper="upper" bindscrolltolower="lower" bindscroll="scroll" wx:if="{{data.list}}">
+        <block wx:for="{{data.list}}" wx:key="{{index}}">
+          <list-item item="{{item}}"></list-item>
+        </block>
+      </scroll-view>
+      <view wx:if="{{data.list.length==0}}" class='no-data'>
+          <view class='icon-nothing'></view>
+          暂无数据
       </view>
     </view>
   </view>
-  <view class="divide"></view>
-  <view class="index-hot-goods">
-    <view class="index-title">
-      <view class="index-title-content">医生团队</view>
-      <view class="index-title-all" bindtap="handleToDoctor">查看全部</view>
-    </view>
-    <view class="index-hot-items">
-      <view class="index-hot-item">
-        <view class="index-hot-item-meal">
-          <view class="index-hot-item-meal-logo"></view>
-          <view class="index-hot-item-meal-content">
-            <view class="index-hot-item-meal-content-wrap">
-              <view class="index-hot-item-meal-content-name">林涵中</view>
-              <view class="index-hot-item-meal-content-title">特聘医师</view>
-            </view>
-            <view class="index-hot-item-meal-content-staff">耳鼻喉科</view>
-            <view class="index-hot-item-meal-content-expert text_ellipsis"></view>
-          </view>
-        </view>
-      </view>
-      <view class="index-hot-item">
-        <view class="index-hot-item-meal">
-          <view class="index-hot-item-meal-logo"></view>
-          <view class="index-hot-item-meal-content">
-            <view class="index-hot-item-meal-content-wrap">
-              <view class="index-hot-item-meal-content-name">林涵中</view>
-              <view class="index-hot-item-meal-content-title">特聘医师</view>
-            </view>
-            <view class="index-hot-item-meal-content-staff">耳鼻喉科</view>
-            <view class="index-hot-item-meal-content-expert text_ellipsis">擅长：耳科疾病诊治、耳显微外、五官、整形美容耳…</view>
-          </view>
-        </view>
-      </view>
-    </view>
-  </view>
-  <view class="divide"></view>
-  <view class="index-clinic">
-    <view class="index-title">
-      <view class="index-title-content">科室介绍</view>
-      <view class="index-title-all" bindtap="handleToStaffInfo">查看全部</view>
-    </view>
-    <view class="index-clinic-items">
-      <view class="index-clinic-item">
-        <view class="index-clinic-item-logo"></view>
-        <view class="index-clinic-item-name text_ellipsis">儿科</view>
-      </view>
-      <view class="index-clinic-item">
-        <view class="index-clinic-item-logo"></view>
-        <view class="index-clinic-item-name text_ellipsis">内分泌血液内分泌血液</view>
-      </view>
-      <view class="index-clinic-item">
-        <view class="index-clinic-item-logo"></view>
-        <view class="index-clinic-item-name text_ellipsis">内分泌血液内分泌血液</view>
-      </view>
-      <view class="index-clinic-item">
-        <view class="index-clinic-item-logo"></view>
-        <view class="index-clinic-item-name text_ellipsis">内分泌血液内分泌血液</view>
-      </view>
-    </view>
-  </view>
-  <view class="divide"></view>
-  <view class="index-clinic-info">
-    <view class="index-title">
-      <view class="index-title-content">诊所概况</view>
-      <view class="index-title-all">查看全部</view>
-    </view>
-    <swiper
-    autoplay
-    circular
-    next-margin="90px"
-    interval="3000">
-      <swiper-item>
-       <image class="index-item-bg" src="../../images/doc_bg.png" mode="scaleToFill"></image>
-      </swiper-item>
-       <swiper-item>
-       <image class="index-item-bg" src="../../images/article_bg2.png" mode="scaleToFill"></image>
-      </swiper-item>
-      <swiper-item>
-       <image class="index-item-bg" src="../../images/article_bg2.png" mode="scaleToFill"></image>
-      </swiper-item>
-    </swiper>
-    <view class="index-clinic-info-detail">
-      <view class="index-clinic-info-detail-items">
-        <view class="index-clinic-info-detail-item">
-          <view class="index-clinic-info-detail-item-logo"></view>
-          <view class="index-clinic-info-detail-item-name">诊所地址</view>
-          <view class="index-clinic-info-detail-item-divide"></view>
-          <view class="index-clinic-info-detail-item-content text_ellipsis">浙江省杭州市滨江区上峰电商产业园3号楼</view>
-        </view>
-        <view class="index-clinic-info-detail-item">
-          <view class="index-clinic-info-detail-item-logo"></view>
-          <view class="index-clinic-info-detail-item-name">营业时间</view>
-          <view class="index-clinic-info-detail-item-divide"></view>
-          <view class="index-clinic-info-detail-item-content text_ellipsis">周一至周五 8:00 ～ 19:00</view>
-        </view>
-        <view class="index-clinic-info-detail-item">
-          <view class="index-clinic-info-detail-item-logo"></view>
-          <view class="index-clinic-info-detail-item-name">诊所电话</view>
-          <view class="index-clinic-info-detail-item-divide"></view>
-          <view class="index-clinic-info-detail-item-content text_ellipsis">0571-822030 8:00 ～ 19:00</view>
-        </view>
-      </view>
-    </view>
-  </view>
-  <view class="divide"></view>
-  <view class="index-online">
-    <view class="index-online-wrap">
-      <view class="index-online-logo"></view>
-      <view class="index-online-name">在线客服</view>
-    </view>
-    <view class="arrow_right"></view>
-  </view>
-  <view class="divide"></view>
-</view>
+

@@ -1,7 +1,17 @@
 // components/listItem/index.js
 Component({
-  properties:{
-
+  properties: {
+    item: {
+      type: Object,
+      value: {},
+      observer(data) {
+        this.setData({
+          ...data
+        });
+      }
+    }
+  },
+  data: {
   },
   methods: {
     

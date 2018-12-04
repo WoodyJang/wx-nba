@@ -1,10 +1,9 @@
 //app.js
-import regeneratorRuntime from "./packages/regenerator-runtime/runtime";
+const regeneratorRuntime = global.regeneratorRuntime = require( "./packages/regenerator-runtime/runtime");
 App({
   onLaunch: function () {
     
   },
   globalData: {
-    
   }
 })

@@ -1,0 +1,10 @@
+<view class="news-item bb">
+  <view class="logo"><image src="{{imgsrc}}"></image></view>
+  <view class="header">
+    <view class="title">{{title}}</view>
+    <view class="content">
+      <view class="time">{{ptime}}</view>
+      <view class="comment">{{commentCount}}</view>
+    </view>
+  </view>
+</view>

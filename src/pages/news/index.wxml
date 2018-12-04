@@ -1,0 +1,5 @@
+<view class="news">
+  <block  wx:for="{{data}}" wx:for-index="index" wx:for-item="item" wx:key="index">
+    <news-item item="{{item}}"></news-item>
+  </block>
+</view>

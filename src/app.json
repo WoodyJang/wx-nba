@@ -1,10 +1,7 @@
 {
   "pages": [
-    "pages/index/index",
-    "pages/launch/index",
-    "pages/doctor/index",
-    "pages/staff/detail/index",
-    "pages/staff/index"
+    "pages/news/index",
+    "pages/index/index"
   ],
   "window": {
     "backgroundTextStyle": "dark",
@@ -23,7 +20,7 @@
         "selectedIconPath": "images/navbar/ball-active.png"
       },
       {
-        "pagePath": "pages/index/index",
+        "pagePath": "pages/news/index",
         "text": "NBA资讯",
         "iconPath": "images/navbar/news.png",
         "selectedIconPath": "images/navbar/news-active.png"

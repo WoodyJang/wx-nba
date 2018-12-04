@@ -1,7 +1,7 @@
 //index.js
 //获取应用实例
 const app = getApp()
-import regeneratorRuntime from "../../packages/regenerator-runtime/runtime";
+const { regeneratorRuntime } = global
 import api from '../../constants/api'
 Page({
   data: {

@@ -1,0 +1,6 @@
+{
+  "usingComponents": {
+    "news-item": "/components/newsItem/index"
+  },
+  "onReachBottomDistance": 100
+}

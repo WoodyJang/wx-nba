@@ -1,6 +1,6 @@
-import regeneratorRuntime from "../packages/regenerator-runtime/runtime";
 import MD5 from '../packages/md5'
-
+const { regeneratorRuntime } = global
+const BASE_URL = 'https://wapapi.it919.cn/?service='
 const APPKEY = '6fc18957ce391f84a7ce34ce13cd99c4'
 
 /**
@@ -38,7 +38,7 @@ const wxRequest = async (url, params = {}) => {
   })
   return await new Promise((resolve,reject) => {
     wx.request({
-      url: url,
+      url: BASE_URL + url,
       method: method,
       data: Object.assign({}, params),
       header: header,

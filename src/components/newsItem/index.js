@@ -1,14 +1,13 @@
-// components/listItem/index.js
 Component({
-  properties: {
+  properties:{
     item: {
       type: Object,
       value: {},
-      observer(data) {
+      observer(data){
         this.setData({
           ...data
-        });
+        })
       }
     }
   }
-});
+})

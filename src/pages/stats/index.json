@@ -1,0 +1,6 @@
+{
+  "usingComponents": {
+    "stats-item": "/components/statsItem/index"
+  },
+  "navigationBarTitleText": "数据统计"
+}

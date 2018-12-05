@@ -1,0 +1,5 @@
+<view class="stats-item {{activeClass}}">
+  <view class="item">{{rank}}.{{playername}}</view>
+  <view class="item">{{avgdata}}</view>
+  <view class="item">{{totaldata}}</view>
+</view>

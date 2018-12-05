@@ -1,0 +1,43 @@
+.rank{
+  .league{
+    display: flex;
+    flex-direction: row;
+    height: 80rpx;
+    font-size: 32rpx;
+    justify-content: space-around;
+    .item{
+      width: 50%;
+      text-align: center;
+      height: 80rpx;
+      line-height: 80rpx;
+      color: #777;
+    }
+    .on{
+      color: #15BEA4;
+    }
+  }
+  .rank-container{
+    .list{
+      display: none;
+    }
+    .active{
+      display: block;
+    }
+    .header{
+      display: flex;
+      flex-direction: row;
+      height: 80rpx;
+      line-height: 80rpx;
+      padding: 0 30rpx;
+      background: #f2f7fc;
+      .name,.win,.lose,.rate,.diff{
+        width: 20%;
+        text-align: center;
+        font-size: 28rpx;
+      }
+      .name{
+        text-align: left;
+      }
+    }
+  }
+}

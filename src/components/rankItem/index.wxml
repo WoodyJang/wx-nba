@@ -1,0 +1,7 @@
+<view class="rank-item {{activeClass}}">
+  <view class="item">{{serial}}.{{name}}</view>
+  <view class="item">{{wins}}</view>
+  <view class="item">{{losses}}</view>
+  <view class="item">{{item['wining-percentage']}}%</view>
+  <view class="item">{{item['games-back']}}</view>
+</view>

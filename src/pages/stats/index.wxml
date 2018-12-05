@@ -1,0 +1,26 @@
+<view class="stats">
+  <view class="league clearfix">
+    <view class="item {{active === 'pt' ? 'on': ''}}" data-tab="pt" data-text="得分" bindtap="handlechange">得分</view>
+    <view class="item {{active === 'rb' ? 'on': ''}}" data-tab="rb"  data-text="篮板"bindtap="handlechange">篮板</view>
+    <view class="item {{active === 'at' ? 'on': ''}}" data-tab="at" data-text="助攻"bindtap="handlechange">助攻</view>
+    <view class="item {{active === 'st' ? 'on': ''}}" data-tab="st" data-text="抢断"bindtap="handlechange">抢断</view>
+    <view class="item {{active === 'bk' ? 'on': ''}}" data-tab="bk" data-text="盖帽"bindtap="handlechange">盖帽</view>
+    <view class="item {{active === 'to' ? 'on': ''}}" data-tab="to" data-text="失误"bindtap="handlechange">失误</view>
+    <view class="item {{active === 'tp' ? 'on': ''}}" data-tab="tp" data-text="三分"bindtap="handlechange">三分</view>
+    <view class="item {{active === 'fo' ? 'on': ''}}" data-tab="fo" data-text="犯规"bindtap="handlechange">犯规</view>
+    <view class="item {{active === 'ftp' ? 'on': ''}}" data-tab="ftp" data-text="罚球"bindtap="handlechange">罚球</view>
+    <view class="item {{active === 'sht' ? 'on': ''}}" data-tab="sht" data-text="神投"bindtap="handlechange">神投</view>
+  </view>
+  <view class="stats-container">
+    <view class="header">
+      <text class="name">球员</text> 
+      <text class="average">场均{{headerText}}</text>
+      <text class="total">总{{headerText}}</text>
+    </view>
+    <view class="list">
+      <block  wx:for="{{stats.record}}" wx:for-index="index" wx:for-item="item" wx:key="index">
+        <stats-item item="{{item}}" activeClass="{{index%2 !== 0 ? 'even' : ''}}"></stats-item>
+      </block>
+    </view>
+  </view>
+</view>

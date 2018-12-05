@@ -1,6 +1,6 @@
 /**app.wxss**/
 
-@import './common/style/style.scss';
+@import './common/style/style.wxss';
 
 .container {
   height: 100%;
@@ -11,3 +11,11 @@
   padding: 200rpx 0;
   box-sizing: border-box;
 } 
+
+.clearfix:after{
+  display: block;
+  height: 0;
+  content: '';
+  clear: both;
+  visibility: hidden;
+}

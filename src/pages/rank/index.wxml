@@ -1,0 +1,25 @@
+<view class="rank">
+  <view class="league">
+    <view class="item west {{active === 0 ? 'on': ''}}" data-tab="0" bindtap="handlechange">西部排名</view>
+    <view class="item east {{active === 1 ? 'on': ''}}" data-tab="1" bindtap="handlechange">东部排名</view>
+  </view>
+  <view class="rank-container">
+    <view class="header">
+      <view class="name">球队</view>
+      <view class="win">胜场</view>
+      <view class="lose">负场</view>
+      <view class="rate">胜率</view>
+      <view class="diff">场均差</view>
+    </view>
+    <view class="list west-list {{active === 0 ? 'active': ''}}">
+      <block  wx:for="{{data.west}}" wx:for-index="index" wx:for-item="item" wx:key="index">
+        <rank-item item="{{item}}" activeClass="{{index%2 !== 0 ? 'even' : ''}}"></rank-item>
+      </block>
+    </view>
+    <view class="list east-list {{active === 1 ? 'active': ''}}">
+      <block  wx:for="{{data.east}}" wx:for-index="index" wx:for-item="item" wx:key="index">
+        <rank-item item="{{item}}" activeClass="{{index%2 !== 0 ? 'even' : ''}}"></rank-item>
+      </block>
+    </view>
+  </view>
+</view>

@@ -1,5 +1,7 @@
 {
   "pages": [
+    "pages/stats/index",
+    "pages/rank/index",
     "pages/news/index",
     "pages/index/index"
   ],
@@ -26,13 +28,13 @@
         "selectedIconPath": "images/navbar/news-active.png"
       },
       {
-        "pagePath": "pages/index/index",
+        "pagePath": "pages/rank/index",
         "text": "球队战绩",
         "iconPath": "images/navbar/rank.png",
         "selectedIconPath": "images/navbar/rank-active.png"
       },
       {
-        "pagePath": "pages/index/index",
+        "pagePath": "pages/stats/index",
         "text": "数据统计",
         "iconPath": "images/navbar/stats.png",
         "selectedIconPath": "images/navbar/stats-active.png"

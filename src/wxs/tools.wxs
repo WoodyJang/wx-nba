@@ -1,0 +1,20 @@
+  function toFixed(param) {
+    return parseFloat(param * 100).toFixed(1) + "%";
+  };
+  function getDates(value) {
+    var date = getDate(parseInt(value) * 1000);
+    var Month = date.getMonth() + 1;
+    var Day = date.getDate();
+    var M = Month < 10 ? '0' + Month : Month;
+    var D = Day < 10 ? '0' + Day : Day;
+    return M + '.' + D;
+  };
+ function substr3(str) {
+    var str1 = str.length <= 3 ? str : str.substring(0, 3)
+    return str1
+  };
+  module.exports = {
+    toFixed: toFixed,
+    getDates: getDates,
+    substr3: substr3
+  }

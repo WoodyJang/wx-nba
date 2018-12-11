@@ -1,0 +1,105 @@
+<wxs src="../../wxs/tools.wxs" module="tools" />
+<view class="player-detail">
+  <view class="player-info">
+    <image src="{{detail.portrait}}"></image>
+    <view class="name">
+      <text class="cname">{{detail.cnname}}</text>
+      <text class="position">{{detail.position}}({{detail.number}}号) / {{detail.teamname}}</text>
+    </view>
+  </view>
+  <view class="player-data">
+    <view class="item">
+      <text class="data">{{detail.pointsPG}}</text>
+      <text class="title">得分</text>
+    </view>
+    <view class="item">
+      <text class="data">{{detail.reboundsPG}}</text>
+      <text class="title">篮板</text>
+    </view>
+    <view class="item">
+      <text class="data">{{detail.assistsPG}}</text>
+      <text class="title">助攻</text>
+    </view>
+    <view class="item">
+      <text class="data">{{detail.stealsPG}}</text>
+      <text class="title">抢断</text>
+    </view>
+  </view>
+  <view class="content-title">基本信息</view>
+  <view class="clearfix">
+    <view class='base-info-item'>
+      <text class='base-info-item-title'>生日</text>{{detail.birthdate}}
+    </view>
+    <view class='base-info-item'>
+      <text class='base-info-item-title'>出生地</text>{{detail.birthplace || "-"}}
+    </view>
+    <view class='base-info-item'>
+      <text class='base-info-item-title'>薪金</text>{{detail.yearsalary || "-"}}
+    </view>
+
+    <view class='base-info-item'>
+      <text class='base-info-item-title'>身高/体重</text>{{detail.height}}/{{detail.weight}}
+    </view>
+    <view class='base-info-item' style='width:100%'>
+      <text class='base-info-item-title'>选秀</text>{{detail.showing}}
+    </view>
+  </view>
+  <view class="content-title">最近五场</view>
+  <view class="clearfix">
+    <view class='game-header'>
+      <text wx:for="{{data.lastMatches.heads}}" wx:for-item="item" wx:key="{{index}}">{{item}}</text>
+    </view>
+    <view class='game-body clearfix'>
+      <view wx:for="{{data.lastMatches.list}}" wx:for-item="item" class="game-body1 {{item[1].isWin=='1' ? 'isWin' : ''}}" wx:key="{{index}}">
+        <text >{{tools.getDates(item[0])}}</text>
+        <text class='vs-score'>{{item[1].selfGoal}} :{{item[1].rivalGoal}}</text>
+        <text>{{ tools.substr3(item[2].vsTeamName)}}</text>
+        <text>{{item[3]}}</text>
+        <text>{{item[4]}}</text>
+        <text>{{item[5]}}</text>
+        <text>{{item[6]}}</text>
+        <text>{{item[7]}}</text>
+        <text>{{item[8]}}</text>
+      </view>
+    </view>
+  </view>
+  <view class="content-title">赛季数据</view>
+  <view class="clearfix">
+    <view class='gird-9'>
+      <view class='gird-9-item'>
+        <text>{{detail.games}}</text> 出场数
+      </view>
+      <view class='gird-9-item'>
+        <text>{{detail.gamesStarted}}</text> 首发次
+      </view>
+      <view class='gird-9-item'>
+        <text>{{detail.minutesPG}}</text> 时间
+      </view>
+
+      <view class='gird-9-item'>
+        <text> {{tools.toFixed(detail.fgPCT)}}</text> 投篮
+      </view>
+
+      <view class='gird-9-item'>
+        <text>{{tools.toFixed(detail.threesPCT)}}</text> 三分
+      </view>
+
+      <view class='gird-9-item'>
+        <text>{{tools.toFixed(detail.ftPCT)}}</text> 罚球
+      </view>
+
+      <view class='gird-9-item'>
+        <text>{{detail.offensiveReboundsPG}}</text> 前篮板
+      </view>
+
+      <view class='gird-9-item'>
+        <text>{{detail.defensiveReboundsPG}}</text> 后篮板
+      </view>
+
+      <view class='gird-9-item'>
+        <text>{{detail.stealsPG}}</text> 抢断
+      </view>
+
+    </view>
+  </view>
+</view>

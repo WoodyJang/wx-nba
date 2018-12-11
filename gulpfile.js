@@ -39,7 +39,7 @@ var paths = {
     scssDir: 'src/assets/scss',
     imgFiles: 'src/image/**/*',
     scssFiles: 'src/**/*.scss',
-    baseFiles: ['src/**/*.{png,js,json,wxss}', '!src/assets/**/*', '!src/image/**/*'],
+    baseFiles: ['src/**/*.{png,js,json,wxss,wxs}', '!src/assets/**/*', '!src/image/**/*'],
     assetsDir: 'src/assets',
     assetsImgFiles: 'src/assets/images/**/*.{png,jpg,jpeg,svg,gif}',
     wxmlFiles: 'src/**/*.wxml',

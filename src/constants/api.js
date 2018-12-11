@@ -17,6 +17,12 @@ const api = {
   player_top(params) {
     return wxRequest('Nba.player_top', params)
   },
+  player_Game(params){
+    return wxRequest('Nba.playerGame',params)
+  },
+  player_detail(params){
+    return wxRequest('Nba.player_detail', params)
+  }
 
 };
 export default  api

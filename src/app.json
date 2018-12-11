@@ -1,6 +1,7 @@
 {
   "pages": [
     "pages/stats/index",
+    "pages/player_detail/index",
     "pages/rank/index",
     "pages/news/index",
     "pages/index/index"

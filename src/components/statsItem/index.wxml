@@ -1,5 +1,7 @@
-<view class="stats-item {{activeClass}}">
-  <view class="item">{{rank}}.{{playername}}</view>
-  <view class="item">{{avgdata}}</view>
-  <view class="item">{{totaldata}}</view>
+<view >
+  <navigator class="stats-item {{activeClass}}" url="/pages/player_detail/index?id={{playerid}}">
+    <view class="item">{{rank}}.{{playername}}</view>
+    <view class="item">{{avgdata}}</view>
+    <view class="item">{{totaldata}}</view>
+  </navigator>
 </view>

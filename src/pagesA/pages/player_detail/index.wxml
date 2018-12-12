@@ -1,4 +1,4 @@
-<wxs src="../../wxs/tools.wxs" module="tools" />
+<wxs src="../../../wxs/tools.wxs" module="tools" />
 <view class="player-detail">
   <view class="player-info">
     <image src="{{detail.portrait}}"></image>

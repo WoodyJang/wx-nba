@@ -1,7 +1,8 @@
 {
   "usingComponents": {
-    "news-item": "/components/newsItem/index"
+    "news-item": "/components/newsItem/index",
+    "tabbar": "/components/tabbar/index"
   },
   "navigationBarTitleText": "NBA资讯",
-  "onReachBottomDistance": 100
+  "onReachBottomDistance": 200
 }

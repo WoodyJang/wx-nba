@@ -1,11 +1,15 @@
+//获取应用实例
+const app = getApp()
 import api from '../../constants/api'
 const { regeneratorRuntime } = global
 Page({
   data: {
+    tabbar: {},
     data: {},
     active: 0
   },
   onLoad(){
+    app.editTabbar();
     this.team_rank()
   },
   async team_rank(page){

@@ -1,6 +1,7 @@
 {
   "usingComponents": {
-    "rank-item": "/components/rankItem/index"
+    "rank-item": "/components/rankItem/index",
+    "tabbar": "/components/tabbar/index"
   },
   "navigationBarTitleText": "球队战绩"
 }

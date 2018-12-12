@@ -3,3 +3,4 @@
     <news-item item="{{item}}"></news-item>
   </block>
 </view>
+<tabbar tabbar="{{tabbar}}"></tabbar>

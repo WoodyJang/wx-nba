@@ -1,12 +1,17 @@
+
+//获取应用实例
+const app = getApp()
 import api from '../../constants/api'
 const { regeneratorRuntime } = global
 Page({
   data: {
+    tabbar: {},
     data: {},
     active: 'pt',
     headerText: '得分'
   },
   onLoad(){
+    app.editTabbar()
     this.player_top()
   },
   async player_top(page){

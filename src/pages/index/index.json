@@ -1,5 +1,6 @@
 {
   "usingComponents": {
-    "list-item": "/components/listItem/index"
+    "list-item": "/components/listItem/index",
+     "tabbar": "/components/tabbar/index"
   }
 }

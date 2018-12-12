@@ -1,4 +1,4 @@
-import api from '../../constants/api'
+import api from '../../../constants/api'
 const { regeneratorRuntime } = global
 Page({
   data: {

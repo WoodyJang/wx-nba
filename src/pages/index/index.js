@@ -5,11 +5,15 @@ const { regeneratorRuntime } = global
 import api from '../../constants/api'
 Page({
   data: {
+    //tabbar
+    tabbar: {},
     date: {},
     list: []
   },
   
   onLoad: function () {
+    app.editTabbar();
+    console.log(this.data.tabbar)
     this.nab_schedule()
   },
   async nab_schedule(params){

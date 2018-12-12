@@ -1,6 +1,7 @@
 {
   "usingComponents": {
-    "stats-item": "/components/statsItem/index"
+    "stats-item": "/components/statsItem/index",
+    "tabbar": "/components/tabbar/index"
   },
   "navigationBarTitleText": "数据统计"
 }
